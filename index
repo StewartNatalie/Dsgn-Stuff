@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta content="yes" name="apple-touch-fullscreen"/>
+        <meta name= "apple-mobile-web-app-status-bar-style" content="black"/>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Dsgn Stuff</title>
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Barlow+Semi+Condensed&family=Gothic+A1&family=IBM+Plex+Sans+Condensed:wght@200&family=IBM+Plex+Sans:wght@300&family=Mulish:wght@300&family=News+Cycle&family=Noto+Sans+JP:wght@300&family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="main.js" defer></script>
+
+
+    </head>
+
+    <body>
+        
+        <header class="fixed">
+        <div class ="nav">        
+            <div class ="left-side">
+                <div class ="brand">
+                    <a href="index.html"><div> Dsgn<br>Stuff </div></a>
+                </div>
+            </div> 
+
+            <div class ="nav-links">
+                <li><a href="services.html">Services</a></li>  
+                <li><a href="contact.html">Contact</a></li>             
+            </div>     
+            
+            <div class ="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        </header>
+        
+        <div class="intro">
+            <div class="slideShowImages" style="background-image:url(images/beige.jpg)"></div>
+            <div class="slideShowImages" style="background-image:url(images/chairs.jpg)"></div>
+            <div class="slideShowImages" style="background-image:url(images/couch1.jpg)"></div>
+            <div class="slideShowImages" style="background-image:url(images/table.jpg)"></div>
+            <div class="slideShowImages" style="background-image:url(images/stools.jpg)"></div>
+            <div class="slideShowImages" style="background-image:url(images/pinkstuff.jpg)"></div>
+
+        </div>
+                      
+        <div class="text">
+            <h2>
+            Dsgn Stuff is on a journey to revolutionize the way your company's stuff is designed. 
+            </h2>
+            <div class="image-sticky">
+            <div class="portfolio-img-background-2" style="background-image:url(images/desk.jpg)"></div>
+            </div>
+            <h3>
+            <br>We design 2D and 3D environments to customize your tech spaces, your physical spaces and your brand. We're here to make stuff beautiful, functional, and effective.
+    
+            </h3>
+            <h1>Web Design・Web Development・Branding・Interior Spaces            
+            </h1>
+            <p>Dsgn Stuff by Natalie Stewart © 2020
+                Montecito・CA</p>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <p>Dsgn Stuff © 2020
+                Montecito・CA</p>
+            </div>
+        </footer>
+
+        <script>
+            const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')   
+
+            portfolioItems.forEach(portfolioItem => {
+                portfolioItem.addEventListener('mouseover', () => {
+                    portfolioItem.childNodes[1].classList.add('img-darken');
+                })
+                portfolioItem.addEventListener('mouseout', () => {
+                    portfolioItem.childNodes[1].classList.remove('img-darken');
+                })
+            })
+        </script>
+          
+
+                  
+        <script src="app.js"></script> 
+    
+    </body>
+
+</html>
